@@ -17,7 +17,11 @@ import java.util.Arrays;
 import java.util.List;
 
 
-
+/**
+ * Handles POST and GET access types
+ * @author Kevin
+ *
+ */
 @RestController
 public class LogController{
 
@@ -25,7 +29,12 @@ public class LogController{
 	@Autowired
 	private LogService logService;
 	
-	
+	/**
+	 * Method that handles POST requests with a JSON payload.
+	 * Checks if payload is a valid JSON Object or JSON Array format then saves to the database
+	 * @param item JSON Payload
+	 * @return
+	 */
 	@PostMapping(path="/postlogs", consumes="application/json", produces="application/json")
 	public ResponseEntity<?> addLog(@RequestBody String item) {
 
@@ -54,6 +63,13 @@ public class LogController{
 			
 	}
 	
+	/**
+	 * Method that handles GET requests with some optional parameters. Retrieves matching documents from the mongodb database in JSON format
+	 * @param userId Corresponds to mongoDB's userId field
+	 * @param type	Corresponds to mongoDB's type field
+	 * @param time Corresponds to mongoDB's time field in String format.
+	 * @return
+	 */
 	@GetMapping(path="/getlogs")
 	@ResponseBody
 	public List<Log> getLogs(@RequestParam(required=false) String userId, @RequestParam(required=false) String type, @RequestParam(required=false) String time) {

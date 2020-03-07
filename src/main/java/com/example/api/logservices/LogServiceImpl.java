@@ -7,6 +7,11 @@ import org.springframework.stereotype.Service;
 
 import com.example.api.model.Log;
 
+/**
+ * Implementation of LogService interface
+ * @author Kevin
+ *
+ */
 @Service
 public class LogServiceImpl implements LogService{
 

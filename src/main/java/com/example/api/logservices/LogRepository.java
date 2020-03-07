@@ -8,6 +8,12 @@ import org.springframework.stereotype.Repository;
 
 import com.example.api.model.Log;
 
+/**
+ * Simple interface that adds custom methods based on get parameters for db access.
+ * 
+ * @author Kevin
+ *
+ */
 @Repository
 public interface LogRepository extends MongoRepository<Log,String>{
 	

@@ -11,6 +11,11 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Document model for the Log collections in MongoDB
+ * @author Kevin
+ *
+ */
 @Document(collection = "Log")
 public class Log {
 	

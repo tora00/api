@@ -4,6 +4,11 @@ import com.example.api.model.*;
 
 import java.util.List;
 
+/**
+ * Simple interface that defines custom methods for db access.
+ * @author Kevin
+ *
+ */
 public interface LogService {
 
 	List<Log> findAll();
