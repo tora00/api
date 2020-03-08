@@ -26,6 +26,23 @@
      * **Code:** 400
     
        **Content:** `Invalid format`
+       
+   * **Example POST payload:**
+   
+    `{
+    "userId": "herokutest",
+    "sessionId": "bng1322",
+    "actions": [
+       {
+        "time": "2020-03-07T12:34:30-05:00",
+         "type": "VIEW",
+         "properties": {
+           "viewedId": "FDJKLHSLD"
+          }
+        }
+      ]
+     }`
+
 
 
 **Retrieval**
