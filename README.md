@@ -1,7 +1,9 @@
 # Logging API
  A simple api that allows for insertion or retrieval of log data in JSON format using POST and GET requests.
  
- A hosted version is available on https://kevin-naval-api-test.herokuapp.com/
+ A working hosted version is available on https://kevin-naval-api-test.herokuapp.com/.
+ 
+ The log files are stored in MongoDB.
 
 **Usage**
 ---
