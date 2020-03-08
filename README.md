@@ -77,6 +77,12 @@
    * **Sample Call:**<br/>
      `https://kevin-naval-api-test.herokuapp.com/getlogs?userId=ABC123XYZ`
      
+**Application Limitations**
+---
+ **Limitations based on requirements**
+ * Landing page is work-in-progress
+ * Search parameters limited to `userId`, `type`, and `time`
+     
  
 **Follow Up**
 ---
