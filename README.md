@@ -57,4 +57,8 @@
     
    * **Sample Call:**<br/>
      `https://kevin-naval-api-test.herokuapp.com/getlogs?userId=ABC123XYZ`
-   
+     
+ 
+**Follow Up**
+---
+ While this application is written for a technical assessment, it can be polished to accommodate scalability by adhering to certain factors. It is import to ensure that the app's codebase is accurately tracked by employing and effectively managing a revision control system and every developer working on the app are working with the same codebase. The API's architecture is also important to how well it can scale. An api built with a lot of unnecessary overheads can cause poor and slow performance. Making sure that the most efficient code is written (or even an external package/module if it's more efficient than manual implementation), will minimize the performance issues that can affect scaling. Of course, no matter how well we write code or manage repositories, one of the biggest limiting factors that can affect an application's scalability is the hardware the application is hosted in. Applications that are hosted in weak, non-specialized hardware may be able to handle light traffic, but no more than that. Powerhouse applications and services such as Google and Amazon see billions of traffic per month, in order to accommodate that much traffic, they house their own powerful hardware, spread across the world, providing a decentralized and efficient method to process traffic. However, for most other companies, this really isn't a feasible option because of the underlying costs. So the best option is to host their applications on platforms that offer cloud computing such as AWS and Heroku. These entities are able to easily provide scalability and computing efficiency, as well as lowering overall costs.
